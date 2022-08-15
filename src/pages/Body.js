@@ -5,15 +5,21 @@ import { useState } from "react";
 const Body = () => {
   const [name, setName] = useState("Jared");
   const [users, setUsers] = useState([]);
+  const [number, setNums] = useState(11);
+
   const handleName = (e) => {
     const input = document.getElementById("name");
-
     setName(input.value);
   };
 
   const getUserData = () => {
     const url = `https://jsonplaceholder.typicode.com/users`;
     fetch(url).then((res) => res.json().then((data) => setUsers(data)));
+  };
+
+  const handleNums = (e) => {
+    e.preventDefault();
+    setNums(number + 1);
   };
   useEffect(getUserData, []);
 
@@ -22,13 +28,15 @@ const Body = () => {
   });
   return (
     <main>
-      <img src={require("../images/image(14).png")} />
+      <img src={require("../images/Lider_Speed.png")} />
 
       <p>Hi {name}</p>
       <input type="text" name="name" id="name" />
       <button onClick={handleName}>Click to change name</button>
       <p>This is a new line</p>
       <p>And this is another line!</p>
+      <p>{number}</p>
+      <button onClick={handleNums}>Click to add</button>
       <div id="container">
         <ul className="userList">
           {users.map((user) => (
