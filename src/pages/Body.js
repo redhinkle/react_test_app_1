@@ -28,6 +28,7 @@ const Body = () => {
       <input type="text" name="name" id="name" />
       <button onClick={handleName}>Click to change name</button>
       <p>This is a new line</p>
+      <p>And this is another line!</p>
       <div id="container">
         <ul className="userList">
           {users.map((user) => (
