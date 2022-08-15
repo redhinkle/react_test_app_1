@@ -22,7 +22,7 @@ const Body = () => {
   });
   return (
     <main>
-      <img src={require("../images/Lider_GTmetrix.png")} />
+      <img src={require("../images/Lider_Speed.png")} />
       <p>Hi {name}</p>
       <input type="text" name="name" id="name" />
       <button onClick={handleName}>Click to change name</button>
