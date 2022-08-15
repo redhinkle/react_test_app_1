@@ -1,0 +1,25 @@
+.container {
+  color: #1e6ab3;
+  width: 100%;
+}
+.nav {
+  background-color: #0f2656;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #611947;
+  color: #00a4e1;
+  text-align: center;
+}
