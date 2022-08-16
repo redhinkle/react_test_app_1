@@ -2,24 +2,29 @@
   color: #1e6ab3;
   width: 100%;
 }
+body {
+  background-color: #5bafeb;
+}
 .nav {
-  background-color: #0f2656;
+  background-color: #fff;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   list-style-type: none;
   padding: 15px;
+  width: 90%;
+  margin: 5% auto;
 }
 .nav a {
-  color: white;
+  color: #5bafeb;
   text-decoration: none;
 }
 
 main {
   width: 90%;
   margin: 0 auto;
-  background-color: #611947;
-  color: #00a4e1;
+  background-color: #fff;
+  color: #5bafeb;
   text-align: center;
 }
