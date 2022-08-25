@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { images } from "../data/images.js";
 // import { Lider_GTmetrix as img } from "../images/Lider_GTmetrix.png";
 
 const Body = () => {
   const [name, setName] = useState("Jared");
   const [users, setUsers] = useState([]);
-  const [number, setNums] = useState(11);
+  const [number, setNums] = useState(0);
 
   const handleName = (e) => {
     const input = document.getElementById("name");
@@ -26,8 +27,12 @@ const Body = () => {
   useEffect(() => {
     document.title = `${name}`;
   });
+  let index = 1;
+  const img = images[index];
   return (
     <main>
+      <img src={img.src} />
+      <p>{img.desc}</p>
       <img src={require("../images/Lider_Speed.png")} />
 
       <p>Hi {name}</p>
